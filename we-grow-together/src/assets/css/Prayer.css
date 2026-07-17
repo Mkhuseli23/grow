@@ -8,10 +8,10 @@
     justify-content:center;
     align-items:center;
     text-align:center;
-    color:#fff;
+    color:#FFFFFF;
 
     background:
-    linear-gradient(rgba(18,58,116,.75),rgba(18,58,116,.75)),
+    linear-gradient(rgba(8,41,25,.82),rgba(8,41,25,.82)),
     url("../../assets/prayer.jpg");
 
     background-size:cover;
@@ -21,6 +21,7 @@
 .prayer-hero h1{
     font-size:4rem;
     margin-bottom:20px;
+    color:#D2C689;
 }
 
 .prayer-hero p{
@@ -28,20 +29,24 @@
     margin:auto;
     line-height:1.9;
     font-size:1.2rem;
+    color:#F8F6E7;
 }
 
 .hero-btn{
     display:inline-block;
     margin-top:35px;
-    background:#C9A227;
-    color:#fff;
+    background:#D2C689;
+    color:#082919;
     padding:15px 40px;
     border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
     transition:.3s;
 }
 
 .hero-btn:hover{
-    background:#1E3A8A;
+    background:#16452B;
+    color:#FFFFFF;
 }
 
 /* ==============================
@@ -51,12 +56,24 @@
 .prayer-intro{
     padding:100px 20px;
     text-align:center;
+    background:#F2F2F2;
 }
 
 .prayer-intro h2{
-    color:#1E3A8A;
+    color:#082919;
     font-size:2.5rem;
     margin-bottom:20px;
+    position:relative;
+}
+
+.prayer-intro h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#D2C689;
+    display:block;
+    margin:15px auto 0;
+    border-radius:10px;
 }
 
 .prayer-intro p{
@@ -72,12 +89,12 @@
 
 .prayer-topics{
     padding:100px 20px;
-    background:#f8f9fa;
+    background:#E9E9E9;
 }
 
 .prayer-topics h2{
     text-align:center;
-    color:#1E3A8A;
+    color:#082919;
     margin-bottom:60px;
 }
 
@@ -88,7 +105,8 @@
 }
 
 .prayer-card{
-    background:#fff;
+    background:#FFFFFF;
+    border-top:5px solid #D2C689;
     padding:40px;
     border-radius:18px;
     text-align:center;
@@ -98,15 +116,17 @@
 
 .prayer-card:hover{
     transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
 .icon{
     font-size:50px;
     margin-bottom:20px;
+    color:#D2C689;
 }
 
 .prayer-card h3{
-    color:#1E3A8A;
+    color:#082919;
     margin-bottom:15px;
 }
 
@@ -120,8 +140,8 @@
 ============================== */
 
 .prayer-verse{
-    background:#1E3A8A;
-    color:#fff;
+    background:linear-gradient(135deg,#082919,#16452B,#4B572F);
+    color:#FFFFFF;
     text-align:center;
     padding:90px 20px;
 }
@@ -135,10 +155,14 @@
 }
 
 .prayer-verse span{
-    display:block;
+    display:inline-block;
     margin-top:25px;
-    color:#FFD54F;
+    padding:10px 22px;
+    border:2px solid #D2C689;
+    border-radius:30px;
+    color:#D2C689;
     font-weight:bold;
+    background:rgba(255,255,255,.12);
 }
 
 /* ==============================
@@ -147,25 +171,27 @@
 
 .prayer-cta{
     padding:100px 20px;
-    background:#C9A227;
-    color:#fff;
+    background:#F2F2F2;
+    color:#082919;
     text-align:center;
 }
 
 .prayer-cta h2{
     font-size:3rem;
     margin-bottom:20px;
+    color:#082919;
 }
 
 .prayer-cta p{
     max-width:700px;
     margin:0 auto 35px;
     line-height:1.9;
+    color:#555;
 }
 
 .prayer-cta button{
-    background:#fff;
-    color:#1E3A8A;
+    background:#D2C689;
+    color:#082919;
     border:none;
     padding:16px 40px;
     border-radius:40px;
@@ -176,8 +202,9 @@
 }
 
 .prayer-cta button:hover{
-    background:#1E3A8A;
-    color:#fff;
+    background:#082919;
+    color:#FFFFFF;
+    transform:translateY(-3px);
 }
 
 /* ==============================

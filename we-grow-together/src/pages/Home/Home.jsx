@@ -7,10 +7,39 @@ function Home() {
 
       <Hero />
 
+      {/* Disclaimer */}
+      <section className="disclaimer">
+        <div className="container">
+          <h2>📜 Disclaimer</h2>
+
+          <p>
+            <strong>We Grow Together Fellowship</strong> welcomes believers
+            from different Christian denominations and backgrounds.
+          </p>
+
+          <p>
+            Our purpose is to study the Bible sincerely, seek God's truth,
+            and grow together in faith through His Holy Word.
+          </p>
+
+          <p>
+            We respect different biblical perspectives and encourage
+            respectful, Christ-centered discussions rooted in love,
+            humility, and unity.
+          </p>
+
+          <blockquote>
+            "Make every effort to keep the unity of the Spirit through the bond of peace."
+          </blockquote>
+
+          <span>— Ephesians 4:3</span>
+        </div>
+      </section>
+
       {/* Welcome */}
       <section className="welcome">
         <div className="container">
-          <h2>Welcome to We Grow Together</h2>
+          <h2>We Grow Together Fellowship</h2>
 
           <p>
             We Grow Together is a Bible study community dedicated to helping

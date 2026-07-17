@@ -10,18 +10,19 @@
     text-align:center;
 
     background:
-    linear-gradient(rgba(30,58,138,.75),rgba(30,58,138,.75)),
+    linear-gradient(rgba(8,41,25,.82),rgba(8,41,25,.82)),
     url("../../assets/contact.jpg");
 
     background-size:cover;
     background-position:center;
 
-    color:#fff;
+    color:#FFFFFF;
 }
 
 .contact-hero h1{
     font-size:4rem;
     margin-bottom:20px;
+    color:#D2C689;
 }
 
 .contact-hero p{
@@ -29,6 +30,7 @@
     margin:auto;
     font-size:1.15rem;
     line-height:1.8;
+    color:#F8F6E7;
 }
 
 /* ===========================
@@ -37,7 +39,7 @@
 
 .contact-section{
     padding:100px 0;
-    background:#f8f9fb;
+    background:#F2F2F2;
 }
 
 .contact-grid{
@@ -48,27 +50,27 @@
 
 .contact-info h2,
 .contact-form h2{
-    color:#1E3A8A;
+    color:#082919;
     margin-bottom:20px;
 }
 
-.contact-info>p{
+.contact-info > p{
     color:#666;
     line-height:1.8;
     margin-bottom:35px;
 }
 
 .info-box{
-    background:#fff;
+    background:#FFFFFF;
     padding:25px;
     margin-bottom:20px;
-    border-left:5px solid #C9A227;
+    border-left:5px solid #D2C689;
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .info-box h3{
-    color:#1E3A8A;
+    color:#082919;
     margin-bottom:10px;
 }
 
@@ -81,7 +83,8 @@
 =========================== */
 
 .contact-form{
-    background:#fff;
+    background:#FFFFFF;
+    border-top:5px solid #D2C689;
     padding:40px;
     border-radius:15px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
@@ -96,7 +99,7 @@
 .contact-form input,
 .contact-form textarea{
     padding:15px;
-    border:1px solid #ddd;
+    border:1px solid #CCCCCC;
     border-radius:8px;
     font-size:16px;
     outline:none;
@@ -105,7 +108,8 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus{
-    border-color:#1E3A8A;
+    border-color:#082919;
+    box-shadow:0 0 8px rgba(8,41,25,.15);
 }
 
 .contact-form textarea{
@@ -113,18 +117,20 @@
 }
 
 .contact-form button{
-    background:#1E3A8A;
-    color:#fff;
+    background:#082919;
+    color:#FFFFFF;
     border:none;
     padding:15px;
     border-radius:8px;
     font-size:16px;
+    font-weight:bold;
     cursor:pointer;
     transition:.3s;
 }
 
 .contact-form button:hover{
-    background:#C9A227;
+    background:#16452B;
+    color:#D2C689;
 }
 
 /* ===========================
@@ -132,8 +138,8 @@
 =========================== */
 
 .contact-verse{
-    background:#1E3A8A;
-    color:#fff;
+    background:linear-gradient(135deg,#082919,#16452B,#4B572F);
+    color:#FFFFFF;
     text-align:center;
     padding:90px 20px;
 }
@@ -147,9 +153,13 @@
 }
 
 .contact-verse span{
-    display:block;
+    display:inline-block;
     margin-top:25px;
-    color:#FFD54F;
+    padding:10px 22px;
+    border:2px solid #D2C689;
+    border-radius:30px;
+    color:#D2C689;
+    background:rgba(255,255,255,.12);
     font-weight:bold;
 }
 
@@ -158,8 +168,8 @@
 =========================== */
 
 .contact-cta{
-    background:#C9A227;
-    color:#fff;
+    background:#F2F2F2;
+    color:#082919;
     text-align:center;
     padding:100px 20px;
 }
@@ -167,18 +177,20 @@
 .contact-cta h2{
     font-size:3rem;
     margin-bottom:20px;
+    color:#082919;
 }
 
 .contact-cta p{
     max-width:700px;
     margin:0 auto 35px;
     line-height:1.8;
+    color:#555;
 }
 
 .contact-cta button{
     padding:15px 40px;
-    background:#fff;
-    color:#1E3A8A;
+    background:#D2C689;
+    color:#082919;
     border:none;
     border-radius:40px;
     cursor:pointer;
@@ -188,8 +200,9 @@
 }
 
 .contact-cta button:hover{
-    background:#1E3A8A;
-    color:#fff;
+    background:#082919;
+    color:#FFFFFF;
+    transform:translateY(-3px);
 }
 
 /* ===========================

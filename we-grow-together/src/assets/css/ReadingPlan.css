@@ -10,19 +10,20 @@
     text-align:center;
 
     background:
-    linear-gradient(rgba(18,58,116,.8),rgba(18,58,116,.8)),
+    linear-gradient(rgba(8,41,25,.82),rgba(8,41,25,.82)),
     url("../../assets/reading-plan.jpg");
 
     background-size:cover;
     background-position:center;
 
-    color:#fff;
+    color:#FFFFFF;
     padding:80px 20px;
 }
 
 .reading-hero h1{
     font-size:3.5rem;
     margin-bottom:20px;
+    color:#D2C689;
 }
 
 .reading-hero p{
@@ -30,6 +31,7 @@
     margin:auto;
     font-size:1.2rem;
     line-height:1.8;
+    color:#F8F6E7;
 }
 
 /* ==================================
@@ -38,14 +40,25 @@
 
 .reading-intro{
     padding:100px 0;
-    background:#fff;
+    background:#F2F2F2;
     text-align:center;
 }
 
 .reading-intro h2{
-    color:#123A74;
+    color:#082919;
     font-size:2.5rem;
     margin-bottom:25px;
+    position:relative;
+}
+
+.reading-intro h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#D2C689;
+    display:block;
+    margin:15px auto 0;
+    border-radius:10px;
 }
 
 .reading-intro p{
@@ -61,12 +74,12 @@
 
 .reading-plan{
     padding:100px 0;
-    background:#f7f9fc;
+    background:#E9E9E9;
 }
 
 .reading-plan h2{
     text-align:center;
-    color:#123A74;
+    color:#082919;
     margin-bottom:50px;
     font-size:2.5rem;
 }
@@ -78,7 +91,8 @@
 }
 
 .reading-card{
-    background:#fff;
+    background:#FFFFFF;
+    border-top:5px solid #D2C689;
     padding:30px;
     border-radius:18px;
     text-align:center;
@@ -88,15 +102,16 @@
 
 .reading-card:hover{
     transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
 .reading-card h3{
-    color:#D4AF37;
+    color:#D2C689;
     margin-bottom:10px;
 }
 
 .reading-card h4{
-    color:#123A74;
+    color:#082919;
     margin-bottom:15px;
 }
 
@@ -110,8 +125,8 @@
 ================================== */
 
 .reading-verse{
-    background:#123A74;
-    color:#fff;
+    background:linear-gradient(135deg,#082919,#16452B,#4B572F);
+    color:#FFFFFF;
     text-align:center;
     padding:90px 20px;
 }
@@ -127,8 +142,12 @@
 .reading-verse span{
     display:inline-block;
     margin-top:25px;
-    color:#FFD54F;
+    padding:10px 22px;
+    border:2px solid #D2C689;
+    border-radius:30px;
+    color:#D2C689;
     font-weight:bold;
+    background:rgba(255,255,255,.12);
 }
 
 /* ==================================
@@ -138,25 +157,27 @@
 .reading-cta{
     padding:100px 20px;
     text-align:center;
-    background:#D4AF37;
-    color:#fff;
+    background:#F2F2F2;
+    color:#082919;
 }
 
 .reading-cta h2{
     font-size:3rem;
     margin-bottom:20px;
+    color:#082919;
 }
 
 .reading-cta p{
     max-width:700px;
     margin:0 auto 40px;
     line-height:1.8;
+    color:#555;
 }
 
 .reading-cta button{
     border:none;
-    background:#fff;
-    color:#123A74;
+    background:#D2C689;
+    color:#082919;
     padding:16px 40px;
     border-radius:40px;
     font-size:16px;
@@ -166,8 +187,9 @@
 }
 
 .reading-cta button:hover{
-    background:#123A74;
-    color:#fff;
+    background:#082919;
+    color:#FFFFFF;
+    transform:translateY(-3px);
 }
 
 /* ==================================

@@ -1,0 +1,13 @@
+{
+  "name": "grow-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix we-grow-together run dev",
+    "start": "npm --prefix we-grow-together run dev",
+    "build": "npm --prefix we-grow-together run build",
+    "preview": "npm --prefix we-grow-together run preview"
+  },
+  "dependencies": {
+    "react-icons": "^5.7.0"
+  }
+}

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/css/Header.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/grow.jpeg";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,6 +56,16 @@ function Header() {
                 Contact
               </NavLink>
             </li>
+            {/* WhatsApp */}
+          <a
+            href="https://wa.me/27712345678"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-icon"
+            aria-label="Chat with us on WhatsApp"
+          >
+            <FaWhatsapp />
+          </a>
           </ul>
         </nav>
 
