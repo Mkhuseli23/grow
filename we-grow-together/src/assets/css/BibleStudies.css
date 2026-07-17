@@ -1,0 +1,286 @@
+/* ===================================
+   BIBLE STUDIES HERO
+=================================== */
+
+.bible-hero {
+    background: linear-gradient(rgba(18, 58, 116, 0.80),
+                rgba(18, 58, 116, 0.80)),
+                url("../../assets/bible-study.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 55vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.bible-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.bible-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* ===================================
+   INTRO
+=================================== */
+
+.bible-intro {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.bible-intro .container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.bible-intro h2 {
+    font-size: 2.5rem;
+    color: #123A74;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.bible-intro h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #D4AF37;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+.bible-intro p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+/* ===================================
+   STUDY LIST
+=================================== */
+
+.study-list {
+    padding: 100px 0;
+    background: #f7f9fc;
+}
+
+.study-list .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.study-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+    text-align: center;
+}
+
+.study-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.study-card h3 {
+    color: #123A74;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.study-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.study-card button {
+    background: #123A74;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.study-card button:hover {
+    background: #D4AF37;
+    color: #fff;
+}
+
+/* ===================================
+   VERSE
+=================================== */
+
+.study-verse {
+    background: linear-gradient(135deg,#123A74,#1E5CB8);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.study-verse blockquote {
+    max-width: 900px;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.study-verse span {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.15);
+    color: #FFD54F;
+    font-weight: bold;
+}
+
+/* ===================================
+   CTA
+=================================== */
+
+.study-cta {
+    background: #D4AF37;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.study-cta h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.study-cta p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.study-cta button {
+    margin-top: 40px;
+    background: white;
+    color: #123A74;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.study-cta button:hover {
+    background: #123A74;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 992px) {
+
+    .study-list .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bible-hero h1,
+    .study-cta h2 {
+        font-size: 2.7rem;
+    }
+
+    .study-verse blockquote {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bible-hero {
+        min-height: 45vh;
+    }
+
+    .bible-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .bible-hero p {
+        font-size: 1rem;
+    }
+
+    .bible-intro,
+    .study-list,
+    .study-verse,
+    .study-cta {
+        padding: 70px 0;
+    }
+
+    .study-list .container {
+        grid-template-columns: 1fr;
+    }
+
+    .study-card {
+        padding: 30px;
+    }
+
+    .study-cta h2 {
+        font-size: 2rem;
+    }
+
+    .study-verse blockquote {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .bible-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .bible-intro h2,
+    .study-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .study-card {
+        padding: 25px;
+    }
+
+    .study-card button,
+    .study-cta button {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,233 @@
+/* ==================================
+   HERO
+================================== */
+
+.reading-hero{
+    min-height:55vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(18,58,116,.8),rgba(18,58,116,.8)),
+    url("../../assets/reading-plan.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:#fff;
+    padding:80px 20px;
+}
+
+.reading-hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.reading-hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+/* ==================================
+   INTRO
+================================== */
+
+.reading-intro{
+    padding:100px 0;
+    background:#fff;
+    text-align:center;
+}
+
+.reading-intro h2{
+    color:#123A74;
+    font-size:2.5rem;
+    margin-bottom:25px;
+}
+
+.reading-intro p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#555;
+}
+
+/* ==================================
+   PLAN
+================================== */
+
+.reading-plan{
+    padding:100px 0;
+    background:#f7f9fc;
+}
+
+.reading-plan h2{
+    text-align:center;
+    color:#123A74;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.reading-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.reading-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.reading-card:hover{
+    transform:translateY(-8px);
+}
+
+.reading-card h3{
+    color:#D4AF37;
+    margin-bottom:10px;
+}
+
+.reading-card h4{
+    color:#123A74;
+    margin-bottom:15px;
+}
+
+.reading-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ==================================
+   VERSE
+================================== */
+
+.reading-verse{
+    background:#123A74;
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.reading-verse blockquote{
+    max-width:850px;
+    margin:auto;
+    font-size:2rem;
+    line-height:1.7;
+    font-style:italic;
+}
+
+.reading-verse span{
+    display:inline-block;
+    margin-top:25px;
+    color:#FFD54F;
+    font-weight:bold;
+}
+
+/* ==================================
+   CTA
+================================== */
+
+.reading-cta{
+    padding:100px 20px;
+    text-align:center;
+    background:#D4AF37;
+    color:#fff;
+}
+
+.reading-cta h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.reading-cta p{
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.8;
+}
+
+.reading-cta button{
+    border:none;
+    background:#fff;
+    color:#123A74;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.reading-cta button:hover{
+    background:#123A74;
+    color:#fff;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:992px){
+
+.reading-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.reading-hero h1{
+    font-size:2.8rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.reading-grid{
+    grid-template-columns:1fr;
+}
+
+.reading-hero{
+    min-height:45vh;
+}
+
+.reading-hero h1{
+    font-size:2.2rem;
+}
+
+.reading-plan,
+.reading-intro,
+.reading-cta{
+    padding:70px 0;
+}
+
+.reading-cta h2{
+    font-size:2rem;
+}
+
+.reading-verse blockquote{
+    font-size:1.4rem;
+}
+
+}
+
+@media(max-width:480px){
+
+.reading-hero h1{
+    font-size:1.8rem;
+}
+
+.reading-card{
+    padding:25px;
+}
+
+.reading-cta button{
+    width:100%;
+}
+
+}

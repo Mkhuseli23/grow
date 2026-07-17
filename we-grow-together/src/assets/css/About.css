@@ -1,0 +1,284 @@
+/* =====================================
+   ABOUT HERO
+===================================== */
+
+.about-hero {
+    background: linear-gradient(rgba(16, 45, 94, 0.80),
+                rgba(16, 45, 94, 0.80)),
+                url("../../assets/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    opacity: .95;
+}
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.about {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.about .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #123A74;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #D4AF37;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+/* =====================================
+   MISSION & VISION
+===================================== */
+
+.mission-vision {
+    background: #f7f9fc;
+    padding: 100px 0;
+}
+
+.mission-vision .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box h3 {
+    color: #123A74;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.box p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* =====================================
+   VALUES
+===================================== */
+
+.values {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.values .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.values h2 {
+    text-align: center;
+    color: #123A74;
+    font-size: 2.7rem;
+    margin-bottom: 60px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+.value-card h3 {
+    color: #123A74;
+    margin-bottom: 20px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* =====================================
+   VERSE
+===================================== */
+
+.about-verse {
+    background: linear-gradient(135deg,#123A74,#1E5CB8);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-verse blockquote {
+    max-width: 900px;
+    margin: auto;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.about-verse span {
+    display: inline-block;
+    margin-top: 30px;
+    background: rgba(255,255,255,.15);
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #FFD54F;
+    font-weight: bold;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:992px){
+
+.about-hero h1{
+    font-size:2.8rem;
+}
+
+.values-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.mission-vision .container{
+    grid-template-columns:1fr;
+}
+
+.about-verse blockquote{
+    font-size:1.6rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.about,
+.values,
+.mission-vision,
+.about-verse{
+    padding:70px 0;
+}
+
+.about-hero{
+    min-height:45vh;
+}
+
+.about-hero h1{
+    font-size:2.2rem;
+}
+
+.about-text h2,
+.values h2{
+    font-size:2rem;
+}
+
+.values-grid{
+    grid-template-columns:1fr;
+}
+
+.about-verse blockquote{
+    font-size:1.3rem;
+}
+
+.about-text p{
+    font-size:1rem;
+}
+
+}
+
+@media(max-width:480px){
+
+.about-hero h1{
+    font-size:1.8rem;
+}
+
+.about-hero p{
+    font-size:1rem;
+}
+
+.box,
+.value-card{
+    padding:25px;
+}
+
+.about-verse blockquote{
+    font-size:1.1rem;
+}
+
+}

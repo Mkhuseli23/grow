@@ -1,0 +1,215 @@
+/* ==============================
+   HERO
+============================== */
+
+.prayer-hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+
+    background:
+    linear-gradient(rgba(18,58,116,.75),rgba(18,58,116,.75)),
+    url("../../assets/prayer.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.prayer-hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.prayer-hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.9;
+    font-size:1.2rem;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#C9A227;
+    color:#fff;
+    padding:15px 40px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#1E3A8A;
+}
+
+/* ==============================
+   INTRO
+============================== */
+
+.prayer-intro{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.prayer-intro h2{
+    color:#1E3A8A;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.prayer-intro p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#666;
+}
+
+/* ==============================
+   PRAYER TOPICS
+============================== */
+
+.prayer-topics{
+    padding:100px 20px;
+    background:#f8f9fa;
+}
+
+.prayer-topics h2{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:60px;
+}
+
+.prayer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.prayer-card{
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.prayer-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.prayer-card h3{
+    color:#1E3A8A;
+    margin-bottom:15px;
+}
+
+.prayer-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ==============================
+   VERSE
+============================== */
+
+.prayer-verse{
+    background:#1E3A8A;
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.prayer-verse blockquote{
+    max-width:850px;
+    margin:auto;
+    font-size:2rem;
+    line-height:1.8;
+    font-style:italic;
+}
+
+.prayer-verse span{
+    display:block;
+    margin-top:25px;
+    color:#FFD54F;
+    font-weight:bold;
+}
+
+/* ==============================
+   CTA
+============================== */
+
+.prayer-cta{
+    padding:100px 20px;
+    background:#C9A227;
+    color:#fff;
+    text-align:center;
+}
+
+.prayer-cta h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.prayer-cta p{
+    max-width:700px;
+    margin:0 auto 35px;
+    line-height:1.9;
+}
+
+.prayer-cta button{
+    background:#fff;
+    color:#1E3A8A;
+    border:none;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.prayer-cta button:hover{
+    background:#1E3A8A;
+    color:#fff;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media(max-width:768px){
+
+.prayer-hero{
+    height:60vh;
+}
+
+.prayer-hero h1{
+    font-size:2.5rem;
+}
+
+.prayer-hero p{
+    font-size:1rem;
+}
+
+.prayer-intro,
+.prayer-topics,
+.prayer-cta{
+    padding:70px 20px;
+}
+
+.prayer-verse blockquote{
+    font-size:1.4rem;
+}
+
+.prayer-cta h2{
+    font-size:2rem;
+}
+
+}
